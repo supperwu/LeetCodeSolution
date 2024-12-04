@@ -10,7 +10,8 @@ namespace LeetCodeSolution
     {
         static void Main(string[] args)
         {
-            new MinCostClimbingStairsSolution().Run();
+            new SearchRotatedSortedArraySolution().Run();
+            Console.ReadLine();
         }
     }
 }
