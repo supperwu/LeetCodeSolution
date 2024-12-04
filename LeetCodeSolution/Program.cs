@@ -10,7 +10,7 @@ namespace LeetCodeSolution
     {
         static void Main(string[] args)
         {
-            new SearchRotatedSortedArraySolution().Run();
+            new BinarySearchSolution().Run();
             Console.ReadLine();
         }
     }
