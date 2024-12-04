@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinarySearch\BinarySearch2Solution.cs" />
     <Compile Include="BinarySearch\BinarySearchSolution.cs" />
     <Compile Include="BinarySearch\SearchRotatedSortedArraySolution.cs" />
     <Compile Include="DP\ClimbStairsSolution.cs" />

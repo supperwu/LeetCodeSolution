@@ -10,7 +10,7 @@ namespace LeetCodeSolution
     {
         static void Main(string[] args)
         {
-            new BinarySearchSolution().Run();
+            new BinarySearch2Solution().Run();
             Console.ReadLine();
         }
     }
