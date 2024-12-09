@@ -39,6 +39,7 @@ namespace LeetCodeSolution
 
                 if (merged.Count == 0 || merged[merged.Count - 1][1] < L)
                 {
+                    //如果L大于merged中最后一个区间的右端点
                     merged.Add(new int[] { L, R });
                 }
                 else
