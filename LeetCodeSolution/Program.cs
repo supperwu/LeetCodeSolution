@@ -62,7 +62,7 @@ namespace LeetCodeSolution
                 }
             }
 
-            new NextPermutationSolution().Run();
+            new RotateSolution().Run();
             Console.ReadLine();
         }
     }
