@@ -62,7 +62,7 @@ namespace LeetCodeSolution
                 }
             }
 
-            new BeautifulHouseSolution().Run();
+            new NextPermutationSolution().Run();
             Console.ReadLine();
         }
     }

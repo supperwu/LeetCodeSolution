@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Array\BeautifulHouseSolution.cs" />
     <Compile Include="Array\MergeSolution.cs" />
+    <Compile Include="Array\NextPermutationSolution.cs" />
     <Compile Include="Array\SetZeroSolution.cs" />
     <Compile Include="BinarySearch\BinarySearch2Solution.cs" />
     <Compile Include="BinarySearch\BinarySearchSolution.cs" />
