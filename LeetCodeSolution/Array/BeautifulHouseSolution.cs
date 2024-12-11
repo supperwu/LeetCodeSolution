@@ -6,6 +6,21 @@ using System.Threading.Tasks;
 
 namespace LeetCodeSolution
 {
+    /*
+     * Question:
+
+        The city authorities are examingning the houses in a residential area for a city planning scheme.
+        The area is depicted in an aerial view and divided into an N x M grid.
+        If a grid cell contains some part of a house roof, it is assigned a value 1;
+        if not, then the cell represents a vacant plot and is assigned the value 0.
+
+        Clusters of adjacent grid cells with value 1 represent a single house.
+        Diagonally placed grids with value 1 do not represent a single house.
+        "Beautiful house" is a special kind of house that is surrounded by vacant plots on all sides: horizontally,vertically and diagonally. 
+        You may assume that all four boundaries of the given gird are surrouonded by vacant plots.
+
+        Write an algorithm to determine the number of "Beautiful house"
+    */
     public class BeautifulHouseSolution
     {
         public int CountBeautifulHouses(int[,] grid)
