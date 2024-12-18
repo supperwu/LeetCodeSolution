@@ -62,7 +62,7 @@ namespace LeetCodeSolution
                 }
             }
 
-            new RotateSolution().Run();
+            new DnaSequenceSolution().Run();
             Console.ReadLine();
         }
     }
