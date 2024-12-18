@@ -51,6 +51,7 @@
     <Compile Include="BinarySearch\BinarySearch2Solution.cs" />
     <Compile Include="BinarySearch\BinarySearchSolution.cs" />
     <Compile Include="BinarySearch\SearchRotatedSortedArraySolution.cs" />
+    <Compile Include="BinaryTree\SubTreeSolution.cs" />
     <Compile Include="DP\ClimbStairsSolution.cs" />
     <Compile Include="DP\MinCostClimbingStairsSolution.cs" />
     <Compile Include="Program.cs" />
