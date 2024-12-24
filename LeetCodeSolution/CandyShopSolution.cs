@@ -73,14 +73,19 @@ namespace LeetCodeSolution
         {
             //int remainMoeny = money;
             int remainBox = numOfBox;
-            var shop = shops.OrderByDescending(e => e.Efficient).FirstOrDefault(e=>e.Cost <= money);
+            var shop = shops.OrderByDescending(e => e.Nums).FirstOrDefault(e=>e.Cost <= money);
             if (shop != null)
             {
                 money = money - shop.Cost;
                 remainBox = numOfBox - shop.Nums;
             }
 
-            var machine = machines.OrderByDescending(e=>e.Efficient).FirstOrDefault(e=>e.Cost <= money);
+            if (remainBox <= 0)
+            {
+                return 0;
+            }
+
+            var machine = machines.OrderBy(e=>e.Time).FirstOrDefault(e=>e.Cost <= money);
             if (machine != null)
             {
                 money = money - machine.Cost;
@@ -92,7 +97,7 @@ namespace LeetCodeSolution
 
         public int MachineFirst(Shop[] shops, Machine[] machines, int money, int numOfBox, int prepareTime)
         {
-            var machine = machines.OrderByDescending(e => e.Efficient).FirstOrDefault(e => e.Cost <= money);
+            var machine = machines.OrderBy(e => e.Time).FirstOrDefault(e => e.Cost <= money);
             if (machine != null)
             {
                 money = money - machine.Cost;
@@ -100,11 +105,16 @@ namespace LeetCodeSolution
             }
 
             int remainBox = numOfBox;
-            var shop = shops.OrderByDescending(e => e.Efficient).FirstOrDefault(e => e.Cost <= money);
+            var shop = shops.OrderByDescending(e => e.Nums).FirstOrDefault(e => e.Cost <= money);
             if (shop != null)
             {
                 money = money - shop.Cost;
                 remainBox = numOfBox - shop.Nums;
+            }
+
+            if (remainBox <= 0)
+            {
+                return 0;
             }
 
             return remainBox * prepareTime;
