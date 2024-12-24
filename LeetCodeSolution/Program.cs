@@ -11,6 +11,7 @@ namespace LeetCodeSolution
     {
         static void Main(string[] args)
         {
+            /*
             int[,] array3 = new int[,] { { 1, 2 }, { 2, 3 }, { 5, 6 } };
             int[,] array4 = { { 1, 2, 3 }, { 3, 4, 5 }, { 5, 6, 7} };
 
@@ -61,8 +62,9 @@ namespace LeetCodeSolution
                     array[i][j] = i * 2 + j + 1;
                 }
             }
+            */
 
-            new SubTreeSolution().Run();
+            new CandyShopSolution().Run();
             Console.ReadLine();
         }
     }
