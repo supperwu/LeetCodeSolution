@@ -64,7 +64,7 @@ namespace LeetCodeSolution
             }
             */
 
-            new MajorityElementSolution().Run();
+            new MaxDistinctElementsSolution().Run();
             Console.ReadLine();
         }
     }
