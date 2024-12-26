@@ -16,6 +16,10 @@ namespace LeetCodeSolution
 
             for (int i = 0; i < nums.Length; i++)
             {
+                //如果pre+1 < nums[i]-k，移动到nums[i]-k
+                //如果pre+1 > nums[i]+k, 移动到nums[i]+k
+                //其他情况，移动到pre+1
+                //也就是pre+1在[nums[i]-k，nums[i]+k]范围里面
                 nums[i] = Math.Min(Math.Max(nums[i] - k, pre + 1), nums[i] + k);  // 计算当前元素的位置
                 if (nums[i] > pre)
                 {
