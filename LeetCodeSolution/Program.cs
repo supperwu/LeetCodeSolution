@@ -64,7 +64,7 @@ namespace LeetCodeSolution
             }
             */
 
-            new CandyShopSolution().Run();
+            new MajorityElementSolution().Run();
             Console.ReadLine();
         }
     }
